@@ -1,43 +1,18 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+import { Footer } from "./components";
 
-function App() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <div className="w-full max-w-lg mx-auto text-center p-6">
-      <div className="flex justify-center gap-4">
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img
-            src={reactLogo}
-            className="logo react"
-            alt="React logo"
-          />
-        </a>
-      </div>
-      <h1 className=" text-3xl font-bold my-6">
-        Vite + React + Daisy UI
-      </h1>
-      <div className=" text-center bg-base-300 p-12">
-        <button
-          className="btn btn-primary w-40 mx-auto mb-6"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-        <p className="read-the-docs">
-          Click on the Vite and React logos to learn more
-        </p>
+const App = () => (
+  <div className="min-h-screen flex flex-col">
+    <div className="hero bg-base-200 flex-grow">
+      <div className="hero-content text-center">
+        <div className="max-w-md">
+          <h1 className="text-5xl font-bold">Hello there</h1>
+          <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+          <button className="btn btn-primary">Get Started</button>
+        </div>
       </div>
     </div>
-  );
-}
+    <Footer />
+  </div>
+);
 
 export default App;
